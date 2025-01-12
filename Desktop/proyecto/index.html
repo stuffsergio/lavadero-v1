@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora || Simpliest</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Esto sirve para añadir imagenes o iconos de esta web en otro lugar del código-->
+    <link rel="icon" type="image/jpg" sizes="32x32" href="features/favicon_caluladora.jpg">
+  </head>
+
+  <body>
+    <header>
+        <div class="iconoCalculadora"><i class="fa-solid fa-calculator"></i></div>
+        <div class="iconoContacto"><i class="fa-solid fa-user"></i></div>
+    </header>
+
+    <h1>Proyecto - Calculadora 2.0</h1>
+
+    <div class="calculadora">
+      <div class="fila1">
+        <input type="text" id="inputDisplay" />
+        <input type="text" id="inputDisplayResultado" readonly/>
+        <button class="division" value="/" onclick="mostrarNumero(this.value)">
+          <i class="fa-solid fa-divide"></i>
+        </button>
+      </div>
+      <div class="fila2">
+        <button class="botonesNumeros" value="7" onclick="mostrarNumero(this.value)">7</button>
+        <button class="botonesNumeros" value="8" onclick="mostrarNumero(this.value)">8</button>
+        <button class="botonesNumeros" value="9" onclick="mostrarNumero(this.value)">9</button>
+        <button class="botonMultiplicar" value="*" onclick="mostrarNumero(this.value)">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="fila3">
+        <button class="botonesNumeros" value="4" onclick="mostrarNumero(this.value)">4</button>
+        <button class="botonesNumeros" value="5" onclick="mostrarNumero(this.value)">5</button>
+        <button class="botonesNumeros" value="6" onclick="mostrarNumero(this.value)">6</button>
+        <button class="botonRestar" value="-" onclick="mostrarNumero(this.value)">
+          <i class="fa-solid fa-minus"></i>
+      </div>
+      <div class="fila4">
+        <button class="botonesNumeros" value="1" onclick="mostrarNumero(this.value)">1</button>
+        <button class="botonesNumeros" value="2" onclick="mostrarNumero(this.value)">2</button>
+        <button class="botonesNumeros" value="3" onclick="mostrarNumero(this.value)">3</button>
+        <button class="botonSumar" value="+" onclick="mostrarNumero(this.value)">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="fila5">
+        <button class="botonBorrarTodo" value="" onclick="borrarTodo(this.value)"><i class="fa-solid fa-eraser"></i></button>
+        <button class="botonesNumeros" value="0" onclick="mostrarNumero(this.value)">0</button>
+        <button class="botonBorrarUnNumero" onclick="borrarUltimo()"><i class="fa-solid fa-delete-left"></i></button>
+        <button class="botonIgual" onclick="resolver()"><i class="fa-solid fa-equals"></i></button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Una iniciativa de <a href="https://www.instagram.com/stuffsergio/" target="_blank">@stuffsergio</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
